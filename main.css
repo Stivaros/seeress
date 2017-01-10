@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  margin-top: 100px;
+  margin: 0.5em 0;
   color: #082240;
 }
 
@@ -13,6 +13,11 @@ h2, p {
 .content {
   background-color: #f0f0f0;
   border: 3px solid #E2E524;
+}
+
+li {
+  margin: 0 auto;
+  font-size: .75em;
 }
 
 .btn.sharp {
@@ -35,15 +40,13 @@ h2, p {
 
 .form-center {
   display: inline-block;
+  text-align: center;
 }
 
 .footer {
   border-top: 3px solid #E2E524;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 15%;
   background-color: #f0f0f0;
   padding-top: 1%;
 }
