@@ -1,0 +1,52 @@
+body {
+  background-color: #7DB4B5;
+}
+
+h1 {
+  margin-top: 100px;
+  color: #082240;
+}
+
+h2, p {
+  color: #082240;
+}
+.content {
+  background-color: #f0f0f0;
+  border: 3px solid #E2E524;
+}
+
+.btn.sharp {
+  border-radius: 0;
+  background-color: #006464;
+  position: relative;
+  cursor: pointer;
+	z-index: 1;
+  margin: 1em;
+  padding: 0.8em;
+	vertical-align: top;
+  color: #E8FBFB;
+  font-size: 100%;
+	font-weight: 400;
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn.sharp:hover {
+  color: #7DB4B5;
+}
+
+.form-center {
+  display: inline-block;
+}
+
+.footer {
+  border-top: 3px solid #E2E524;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 15%;
+  background-color: #f0f0f0;
+  padding-top: 1%;
+}
+.footer.container {
+  max-height: 100%;
+}

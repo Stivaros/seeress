@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>seerESS</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Form CSS -->
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="set2.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="text-center display-1">seerESS Digital Services</h1>
+    </header>
+    <main class="content container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Content goes here.
+          </p>
+        </div>
+      </div>
+      <form class="form-center form-inline" action="https://formspree.io/efstathios@seeress.co.uk" method="post">
+        <h2 class="text-center">Register Your Interest:</h2>
+  				<span class="input input--yoshiko">
+  					<input class="input__field input__field--yoshiko" type="text" id="input-10" name="name" />
+  					<label class="input__label input__label--yoshiko" for="input-10">
+  						<span class="input__label-content input__label-content--yoshiko" data-content="Your Name">Your Name</span>
+  					</label>
+  				</span>
+  				<span class="input input--yoshiko">
+  					<input class="input__field input__field--yoshiko" type="text" id="input-11" name="_replyto" />
+  					<label class="input__label input__label--yoshiko" for="input-11">
+  						<span class="input__label-content input__label-content--yoshiko" data-content="Your Email">Your Email</span>
+  					</label>
+  				</span>
+          <input type="hidden" name="_next" value="#" />
+  				<button type="submit" class="btn btn-primary sharp input">Notify Me!</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="logo.png" alt="seerESS logo" />
+          </div>
+          <div class="col-9 text-right">
+            <p>
+              &copy; seerESS Digital Services Ltd <script type="text/javascript"> document.write(new Date().getFullYear());</script><br />
+              seerESS Digital Services Ltd is a registered company (No. 10539241) in England and Wales.<br /><br />
+              <a href="mailto:#">Email link here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Form Scripts -->
+    <script src="classie.js"></script>
+		<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+  </body>
+</html>
